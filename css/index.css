@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#header {
+    width: 100%;
+    height: 100vh;
+
+}
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+nav ul li {
+    list-style-type: none;
+    padding: 10px;
+}
+nav a {
+    position: relative;
+}
+
+nav a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #e27741;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav  a:hover::after{
+    width: 100%;
+}
+.header-mdl {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-img img {
+  width: 450px;
+  margin-top: 20%;
+  border-radius: 15px;
+}
+#about {
+    width: 100%;
+    height: 100vh;
+}
+.abt-me{
+    text-align: center;
+}
+
+.abt-img {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.abt-text img {
+    width: 150px;
+    border-radius: 50%;
+
+}
+.tab-titles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 120px 0 40px;
+}
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background:#e27741 ;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 100%;
+}
+
+.tab-contents ul li {
+    list-style-type: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span {
+    color: #e27741;
+    font-size: 14px;
+}
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tab-contents {
+    display: none;
+}
+.tab-contents.active-tab {
+    display: block;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="/Js/index.js" defer></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+               <h1><a href="./index.html">Portfolio</a></h1>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-mdl">
+               <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I am Eron Blakaj <br> From Istog, Kosova</h1>
+               </div>
+               <div class="header-img">
+                <img src="/images/une.jpg" alt="Eroni">
+               </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <h1 class="abt-me">About Me</h1>
+            <div class="abt-text">
+                <div class="abt-img">
+                    <img src="/images/ceo1.jpg" alt="Eroni2">
+                </div>
+                <p>Hi! Thank you for showing interest to know more about me. I am 22 years old, and I come from the beautiful city of
+                Istog. Currently residing in Prishtina. I am a 3rd year Computer Science and Engineering student at UBT. I have finished
+                all of my classes, I only have a few exams left and my thesis to graduate. At the same time, I am a Trainee at Roi
+                Academy, where I have been doing intensive hours to train in: HTML, CSS, JavaScript, React. Majority of the time you may
+                find me behind a computer screen, coding, YouTube learning, video gaming, and watching anime. If you don not find me
+                behind a computer screen, you will probably find me outdoors playing volleyball with my team, or taking my dog on a walk</p>
+            </div>
+
+            <div class="about-me">
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                    <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML/CSS</span><br>Learned HTML and CSS through School and other extra-curricular studies</li>
+                        <li><span>Javascript</span><br> A beginner in the JavaScript world</li>
+                        <li><span>ReactJS</span><br>A little bit of experience in the ReactJS framework</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                     <ul>
+                         <li><span>University</span><br>Student</li>
+                         <li><span>Roi Academy</span><br> Extra-curricular non degree studies</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="hobbies">
+                    <ul>
+                         <li><span>Gaming</span><br>I spend a lot of time gaming such as CS GO and other video-games</li>
+                         <li><span>Anime</span><br> I spend most of my free time watching Anime</li>
+                        <li><span>Youtube Learning</span><br>Learned a lot through out Youtube</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
