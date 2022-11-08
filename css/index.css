@@ -140,3 +140,63 @@ nav  a:hover::after{
 .tab-contents.active-tab {
     display: block;
 }
+
+#projects {
+    width: 100%;
+    height: 100vh;
+}
+.projects-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.work {
+    width: 50%;
+    margin: 10%;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.desc {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #e27741);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.work:hover .desc {
+    height: 100%;
+}
+
+.desc h2 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.desc a {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+}
