@@ -149,15 +149,16 @@ nav  a:hover::after{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    
 }
 .work {
-    width: 50%;
-    margin: 10%;
+    width: 40%;
     text-align: center;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    margin-top: 10%;
 }
 .work img {
     max-width: 100%;
