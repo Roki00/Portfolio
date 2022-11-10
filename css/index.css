@@ -201,3 +201,12 @@ nav  a:hover::after{
     width: 60px;
     height: 60px;
 }
+#contact {
+    width: 100%;
+    text-align: center;
+}
+.container-contact a {
+    color: #e27741;
+    margin: 20px;
+    font-size: 30px;
+}
